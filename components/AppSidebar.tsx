@@ -78,8 +78,10 @@ const AppSidebar = () => {
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
               <Link href="/">
-                <Image src="/blitzboy.jpg" alt="logo" width={20} height={20} />
-                <span>Digeo</span>
+                <SidebarMenuButton>
+                  <Image src="/blitzboy.jpg" alt="logo" width={20} height={20} />
+                  <span>Digeo</span>
+                </SidebarMenuButton>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
@@ -148,8 +150,10 @@ const AppSidebar = () => {
                   <SidebarMenuItem>
                     <SidebarMenuButton asChild>
                       <Link href="/#">
-                        <Projector />
-                        See All Projects
+                        <SidebarMenuButton>
+                          <Projector />
+                          See All Projects
+                        </SidebarMenuButton>
                       </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
